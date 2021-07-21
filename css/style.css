@@ -29,6 +29,7 @@ h4 {
   color: #00ed82;
   font-size: 13px;
   text-transform: uppercase;
+  padding: 4px;
 }
 
 h3 {
@@ -150,11 +151,26 @@ h3 {
   gap: 40px;
   align-items: center;
   padding: 30px 40px;
-  background: linear-gradient(
+  /*background: linear-gradient(
     318.68 deg,
     #0f495c 0%,
     #0d3640 49.72%,
     #08141f 100%
+  );*/
+  background-image: linear-gradient(
+    to right,
+    #02075d,
+    #010761,
+    #010665,
+    #000669,
+    #00056d,
+    #001075,
+    #00197d,
+    #002285,
+    #003392,
+    #00449e,
+    #0053a8,
+    #0063b2
   );
 }
 
@@ -221,6 +237,28 @@ the last of its types, i.e in our case, the last div, i.e the get bundle btn div
   background: url(../img/cover-4.jpg) no-repeat center center / cover;
 }
 
+/* live */
+.live {
+  background: #151516;
+  padding: 48px;
+}
+.live-border {
+  border: 4px solid #1ce783;
+  border-radius: 16px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.live a {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
 /* media queries */
 @media (max-width: 1287px) {
   .categories .covers {
@@ -235,10 +273,10 @@ the last of its types, i.e in our case, the last div, i.e the get bundle btn div
   }
   .header .header-content {
     text-align: center;
-    padding: 0;
+    padding: 10px;
   }
   .header .header-text-1 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .header .header-text-2 {
     display: none;
@@ -264,5 +302,8 @@ the last of its types, i.e in our case, the last div, i.e the get bundle btn div
   }
   .categories .covers {
     grid-template-columns: 1fr;
+  }
+  .live-border {
+    padding: 30px 10px;
   }
 }
